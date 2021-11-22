@@ -10,6 +10,8 @@ import streamlit as st
 
 st.title("Welcome to BMI Calculator")
 
+st.sidebar.header("User Inputs")
+
 weight = st.sidebar.number_input("Enter Your weight (in kgs)")
 
 status = st.sidebar.radio('Select Your Height category:' , ('cms', 'meters', 'feet'))
