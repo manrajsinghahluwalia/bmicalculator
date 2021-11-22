@@ -15,7 +15,7 @@ weight = st.sidebar.number_input("Enter Your weight (in kgs)")
 status = st.sidebar.radio('Select Your Height category:' , ('cms', 'meters', 'feet'))
 
 if(status == 'cms'):
-    height = st.sidebarnumber_input('Centimeters')
+    height = st.sidebar.number_input('Centimeters')
     try:
         bmi = weight / ((height/100)**2)
     except:
