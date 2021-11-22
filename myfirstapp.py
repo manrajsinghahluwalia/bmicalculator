@@ -1,6 +1,5 @@
 
-#Mini Project: BODY MASS INDEX (BMI)
-#let us recollect everything that we learn above and create a BMI Calculator web app.
+#BODY MASS INDEX (BMI)
 
 #The formula of BMI Index when weight is in Kgs and height is in meters is:
 
