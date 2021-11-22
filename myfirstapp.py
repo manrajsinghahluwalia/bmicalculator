@@ -10,12 +10,12 @@ import streamlit as st
 
 st.title("Welcome to BMI Calculator")
 
-weight = st.number_input("Enter Your weight (in kgs)")
+weight = st.sidebar.number_input("Enter Your weight (in kgs)")
 
-status = st.radio('Select Your Height foramt:' , ('cms', 'meters', 'feet'))
+status = st.sidebar.radio('Select Your Height category:' , ('cms', 'meters', 'feet'))
 
 if(status == 'cms'):
-    height = st.number_input('Centimeters')
+    height = st.sidebarnumber_input('Centimeters')
     try:
         bmi = weight / ((height/100)**2)
     except:
