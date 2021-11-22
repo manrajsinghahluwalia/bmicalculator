@@ -21,14 +21,14 @@ if(status == 'cms'):
     except:
         st.text('Enter some value of height')
 elif(status == 'meters'):
-    height = st.number_input("Meters")
+    height = st.sidebar.number_input("Meters")
 
     try:
         bmi = weight/ (height**2)
     except:
         st.text("Enter some value of height")
 else:
-    height = st.number_input('Feet')
+    height = st.sidebar.number_input('Feet')
     #1 meter = 3.28
     try:
         bmi = weight / (((height/3.28))**2)
